@@ -1,0 +1,56 @@
+See file:///C:/Code/FRC/C++/cppDriveTrain/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling TriggeredDrive.cpp failed.
+In file included from C:\Code\FRC\C++\cppDriveTrain\src\main\include/commands/TriggeredDrive.h:6:0,
+                 from C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\commands\TriggeredDrive.cpp:1:
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:14:16: error: 'DriveTrain::DriveTrain' names the constructor, not the type
+         static DriveTrain::DriveTrain *m_DriveTrain;
+                ^~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:16:9: error: 'TriggeredDrive' does not name a type
+         TriggeredDrive::TriggeredDrive *m_TriggeredDrive;
+         ^~~~~~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\commands\TriggeredDrive.cpp: In constructor 'TriggeredDrive::TriggeredDrive()':
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\commands\TriggeredDrive.cpp:5:14: error: 'm_DriveTrain' is not a member of 'Robot'
+     Requires(Robot::m_DriveTrain);
+              ^~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\commands\TriggeredDrive.cpp: In member function 'virtual void TriggeredDrive::Execute()':
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\commands\TriggeredDrive.cpp:23:5: error: 'm_DriveTrain' is not a member of 'Robot'
+     Robot::m_DriveTrain->MoveRobot(this->speed,this->turn);
+     ^~~~~
+
+compiling OI.cpp successful.
+
+compiling Robot.cpp failed.
+In file included from C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp:1:0:
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:14:16: error: 'DriveTrain::DriveTrain' names the constructor, not the type
+         static DriveTrain::DriveTrain *m_DriveTrain;
+                ^~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:16:9: error: 'TriggeredDrive::TriggeredDrive' names the constructor, not the type
+         TriggeredDrive::TriggeredDrive *m_TriggeredDrive;
+         ^~~~~~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp:6:20: error: 'DriveTrain* Robot::m_DriveTrain' is not a static data member of 'class Robot'
+ DriveTrain *Robot::m_DriveTrain;
+                    ^~~~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp:13:11: error: 'class Robot' has no member named 'm_DriveTrain'
+     this->m_DriveTrain = new DriveTrain();
+           ^~~~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp:15:11: error: 'class Robot' has no member named 'm_TriggeredDrive'
+     this->m_TriggeredDrive = new TriggeredDrive();
+           ^~~~~~~~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopInit()':
+C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\Robot.cpp:38:11: error: 'class Robot' has no member named 'm_TriggeredDrive'
+     this->m_TriggeredDrive->Start();
+           ^~~~~~~~~~~~~~~~
+
+compiling DriveTrain.cpp failed.
+In file included from C:\Code\FRC\C++\cppDriveTrain\src\main\include/commands/TriggeredDrive.h:6:0,
+                 from C:\Code\FRC\C++\cppDriveTrain\src\main\include/subsystems/DriveTrain.h:7,
+                 from C:\Code\FRC\C++\cppDriveTrain\src\main\cpp\subsystems\DriveTrain.cpp:1:
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:14:16: error: 'DriveTrain' does not name a type
+         static DriveTrain::DriveTrain *m_DriveTrain;
+                ^~~~~~~~~~
+C:\Code\FRC\C++\cppDriveTrain\src\main\include/Robot.h:16:9: error: 'TriggeredDrive' does not name a type
+         TriggeredDrive::TriggeredDrive *m_TriggeredDrive;
+         ^~~~~~~~~~~~~~
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Code/FRC/C++/cppDriveTrain/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.
